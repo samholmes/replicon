@@ -10,5 +10,13 @@
     "repl"
   ],
   "author": "Samuel Holmes",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samholmes/replicon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samholmes/replicon/issues"
+  },
+  "homepage": "https://github.com/samholmes/replicon"
 }
