@@ -48,7 +48,7 @@ function processLine(line){
 		args = washArguments(args);
 	
 	var command = _commands[commandName];
-	
+
 	if (typeof command === 'function') {
 		var cb = command.apply(null, args);
 		
@@ -70,7 +70,12 @@ function processLine(line){
 			rl.prompt();
 		}
 	}
-	else {
+	else if (typeof command == 'undefined') // User just pressed enter, just repompt - Bash does this
+	{
+		rl.prompt();
+	}
+	else
+	{
 		echo("Command not found: "+commandName);
 	}
 }
