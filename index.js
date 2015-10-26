@@ -70,13 +70,14 @@ function processLine(line){
 			rl.prompt();
 		}
 	}
-	else if (typeof command == 'undefined') // User just pressed enter, just repompt - Bash does this
+	else if (typeof commandName == 'undefined') // User just pressed enter, just repompt - Bash does this
 	{
 		rl.prompt();
 	}
 	else
 	{
 		echo("Command not found: "+commandName);
+		rl.prompt();
 	}
 }
 
