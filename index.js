@@ -155,6 +155,11 @@ exports.doc = function(commandName, docs){
 	return exports;
 };
 
+exports.prompt = function() //manually reprompt
+{
+	rl.prompt();
+}
+
 
 /**
  * Built-in Commands
