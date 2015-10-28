@@ -35,3 +35,8 @@ General purpose command REPL for Node.js
 			\n\
 			Syntax:\n\
 				echo Hello");
+				
+### Reprompt:
+Manaully reprompt using `replicon.prompt();` within a function, else a return on the function itself will reprompt.
+
+The manaul reprompt methood is useful if you want to abort within a callback and then reprompt after your error message.
