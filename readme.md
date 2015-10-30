@@ -40,3 +40,12 @@ General purpose command REPL for Node.js
 Manaully reprompt using `replicon.prompt();` within a function, else a return on the function itself will reprompt.
 
 The manaul reprompt methood is useful if you want to abort within a callback and then reprompt after your error message.
+
+### Ask:
+Prompt a question, and then get an answer. Useful for asking for login credentials or confirming an action
+	
+
+	replicon.ask("What do you think of Node.js? ", function(answer) {
+		console.log("Thank you for your valuable feedback:", answer);
+		replicon.prompt();
+	});

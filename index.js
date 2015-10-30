@@ -160,6 +160,10 @@ exports.prompt = function() //manually reprompt
 	rl.prompt();
 }
 
+exports.ask = function(q, c)
+{
+	rl.question(q, c);
+}
 
 /**
  * Built-in Commands
