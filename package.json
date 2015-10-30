@@ -10,6 +10,11 @@
     "repl"
   ],
   "author": "Samuel Holmes",
+  "contributors": [
+    {
+      "name": "Kevin Whitman"
+    }
+  ],
   "license": "ISC",
   "repository": {
     "type": "git",
