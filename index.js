@@ -72,6 +72,7 @@ function processLine(line){
 	}
 	else {
 		echo("Command not found: "+commandName);
+		rl.prompt();
 	}
 }
 
