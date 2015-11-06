@@ -48,7 +48,7 @@ function processLine(line){
 		args = washArguments(args);
 	
 	var command = _commands[commandName];
-	
+
 	if (typeof command === 'function') {
 		var cb = command.apply(null, args);
 		
@@ -70,7 +70,12 @@ function processLine(line){
 			rl.prompt();
 		}
 	}
-	else {
+	else if (typeof commandName == 'undefined') // User just pressed enter, just repompt - Bash does this
+	{
+		rl.prompt();
+	}
+	else
+	{
 		echo("Command not found: "+commandName);
 		rl.prompt();
 	}
@@ -150,6 +155,15 @@ exports.doc = function(commandName, docs){
 	return exports;
 };
 
+exports.prompt = function() //manually reprompt
+{
+	rl.prompt();
+}
+
+exports.ask = function(q, c)
+{
+	rl.question(q, c);
+}
 
 /**
  * Built-in Commands

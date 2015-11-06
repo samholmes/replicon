@@ -1,6 +1,6 @@
 {
   "name": "replicon",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "General purpose command REPL for Node.js (alpha)",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,11 @@
     "repl"
   ],
   "author": "Samuel Holmes",
+  "contributors": [
+    {
+      "name": "Kevin Whitman"
+    }
+  ],
   "license": "ISC",
   "repository": {
     "type": "git",
